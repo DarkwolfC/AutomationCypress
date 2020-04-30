@@ -1,1 +1,10 @@
-{}
+{  
+    "reporterEnabled": "mochawesome",
+    "reporterOptions": {
+        "reportDir":"cypress\\mocha",
+        "reportFilename": "customReport",
+        "quiet": true,
+        "html":false,
+        "json": true
+      }
+}

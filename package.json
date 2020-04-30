@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "node_modules\\.bin\\cypress run "
-  },
+  "scripts": {    
+    "normal":"./node_modules/.bin/cypress run",
+    "especifictest": "./node_modules/.bin/cypress run --spec .\\cypress\\integration\\examples\\actions.spec.js",
+    "diferentfile":" npm run test -- --spec \"cypress/integration/exam/*\" ", 
+    "rep" : "npm run especifictest -- --reporter mochawesome",
+    "difrep": "npm run diferentfile -- --reporter mochawesome"
+
+ },
   "author": "Jose",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.4.1"
+    "cypress": "^4.4.1",
+    "cypress-multi-reporters": "^1.2.4",
+    "mocha": "^7.1.1",
+    "mochawesome": "^6.1.0",
+    "mochawesome-merge": "^4.0.3",
+    "mochawesome-report-generator": "^5.1.0"
   }
 }
