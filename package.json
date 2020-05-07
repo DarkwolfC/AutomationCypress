@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {    
     "normal":"./node_modules/.bin/cypress run",
-    "especifictest": "./node_modules/.bin/cypress run --spec .\\cypress\\integration\\examples\\actions.spec.js",
-    "diferentfile":" npm run test -- --spec \"cypress/integration/exam/*\" ", 
-    "rep" : "npm run especifictest -- --reporter mochawesome",
-    "difrep": "npm run diferentfile -- --reporter mochawesome"
+    "espectTest": "./node_modules/.bin/cypress run --spec .\\cypress\\integration\\examples\\actions.spec.js",
+    "diferentFolder":" npm run normal -- --spec \"cypress/integration/exam/*\" ", 
+    "spectReport" : "npm run espectTest -- --reporter mochawesome",
+    "diferentFolderReport": "npm run diferentFolder -- --reporter mochawesome"
 
  },
   "author": "Jose",

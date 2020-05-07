@@ -1,4 +1,5 @@
 {  
+    "projectId":"jhsqxy",
     "reporterEnabled": "mochawesome",
     "reporterOptions": {
         "reportDir":"cypress\\mocha",
