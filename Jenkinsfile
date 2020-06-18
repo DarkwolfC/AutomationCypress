@@ -6,7 +6,9 @@ agent any
 	stage('Data quality check') {
       steps {        
         //bat 'npm install'
-         bash 'dir'
+          bash '''#!/bin/bash
+                    echo "hello world" 
+            '''
         //bat 'npm install cypress '  
         //bat 'echo %Script%'     
         //bat 'echo %parametro%'
