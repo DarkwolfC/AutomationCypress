@@ -3,12 +3,10 @@ agent any
   stages {
     stage('Cypress') {   
 	
-	stage('Data quality check') {
+	stage('CY') {
       steps {        
         //bat 'npm install'
-          bash '''#!/bin/bash
-                    echo "hello world" 
-            '''
+        
         //bat 'npm install cypress '  
         //bat 'echo %Script%'     
         //bat 'echo %parametro%'
