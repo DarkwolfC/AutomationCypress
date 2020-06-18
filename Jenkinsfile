@@ -4,8 +4,7 @@ agent any
     stage('Cypress') {   
 	
 	stage('Data quality check') {
-      steps {
-        git url: 'https://github.com/DarkwolfC/AutomationCypress.git' 
+      steps {        
         bat 'npm install'
         bat 'dir'
         bat 'npm install cypress '  
