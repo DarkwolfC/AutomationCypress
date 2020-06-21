@@ -10,11 +10,12 @@ pipeline {
         stage('Test') {
             steps {
                sh "echo ${params.parameter}"
+               sh "echo ${params.script}"
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sh 'npm run '
             }
         }
     }
