@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Install Cypress') {
             steps {
-               sh 'npx install cypress'
+               //sh 'npm install cypress'
+               sh 'npm install cypress --save-dev'
             }
         }
         stage('Test') {
@@ -15,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'npx run $script'
+                sh 'npm run $script'
             }
         }
     }
