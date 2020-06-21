@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Install Cypress') {
             steps {
-                echo 'Building..'
+               sh 'npm install cypress'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo '$parameter'
             }
         }
         stage('Deploy') {
