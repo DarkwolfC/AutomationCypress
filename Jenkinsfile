@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo '$parameter'
+                echo '${params.parameter}'
             }
         }
         stage('Deploy') {
