@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {    
     "normal":"./node_modules/.bin/cypress run",
-    "specifictTest": "./node_modules/.bin/cypress run --record --key 3e5b8d58-ada5-4bd0-8f3c-44412c756806 --spec .\\cypress\\integration\\examples\\${parameter:-*}",
+    "specifictTest": "./node_modules/.bin/cypress run --record --key 3e5b8d58-ada5-4bd0-8f3c-44412c756806 --spec .\\cypress\\integration\\examples\\${process.env.parameter}",
     "diferentFolder":"--spec .\\cypress\\integration\\examples", 
     "spectReport" : "npm run specifictTest -- --record --key 3e5b8d58-ada5-4bd0-8f3c-44412c756806 --reporter mochawesome",
     "diferentFolderReport": "npm run diferentFolder -- --reporter mochawesome",
