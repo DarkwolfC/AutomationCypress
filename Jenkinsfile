@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'npm run $script $parameter}'
+                sh 'npm run $script $parameter |sed  "s/\"//g"'
             }
         }
     }
