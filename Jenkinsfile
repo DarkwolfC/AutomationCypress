@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // |sed 's/\"//g'
                 //sh 'npm run $script $parameter |sed  "s/\"//g"'
-                sh "$parameter npm run ${script}"
+                sh "parameter=$parameter npm run ${script}"
                 //sh """npm run $script $parameter |sed  's/\"//g' | sed 's/\\(.*\\) /\\1/' """
             }
         }
