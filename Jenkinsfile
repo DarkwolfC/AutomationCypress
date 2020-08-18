@@ -6,6 +6,7 @@ pipeline {
             steps {
                //sh 'npm install cypress'
                sh 'npm install cypress --save-dev'
+                sh 'dir'
             }
         }
         stage('Test') {
