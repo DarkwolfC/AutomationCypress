@@ -15,7 +15,8 @@
     "mergeCM":   "npx mochawesome-merge \"cypress/mocha/*.json > mochawesome.json\"",
     "merge":   "npx mochawesome-merge \"mochawesome-report/*.json > mochawesome.json\"",
     "marge":   "npx marge mochawesome.json -o report",
-    "clean":   "rm mochawesome-report/*.json || true "
+    "clean":   "rm mochawesome-report/*.json || true ",
+    "cleanCM":   "rm cypress/mocha/*.json || true "
 
  },
   "author": "Jose",
