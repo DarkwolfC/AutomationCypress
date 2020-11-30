@@ -1,9 +1,7 @@
 {  
     "projectId":"jhsqxy",
-    "reporterEnabled": "mochawesome",
-    "reporterOptions": {
-        "reportDir":"cypress\\mocha",
-        "reportFilename": "customReport",
+    "reporter": "mochawesome",
+    "reporterOptions": { 
         "quiet": true,
         "html":false,
         "json": true
