@@ -12,6 +12,7 @@
     "GroupMFE": "npm run normal -- --record --key 3e5b8d58-ada5-4bd0-8f3c-44412c756806 --group package/MFE  --spec \"cypress/integration/exam/*\" --tag \"MFE\" ",
     "GroupWebSite":"npm run normal -- --record --key 3e5b8d58-ada5-4bd0-8f3c-44412c756806 --group package/Website --spec \"cypress/integration/examples/*\" --tag \"WebSite\" ",   
     "RecordSpec": "npm run normal -- --record --key 3e5b8d58-ada5-4bd0-8f3c-44412c756806 --spec .\\cypress\\integration\\examples\\actions.spec.js",
+    "mergeCM":   "npx mochawesome-merge \"cypress/mocha/*.json > mochawesome.json\"",
     "merge":   "npx mochawesome-merge \"mochawesome-report/*.json > mochawesome.json\"",
     "marge":   "npx marge mochawesome.json -o report",
     "clean":   "rm mochawesome-report/*.json || true "

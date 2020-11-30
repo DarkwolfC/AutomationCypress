@@ -23,6 +23,7 @@ pipeline {
                 // |sed 's/\"//g'
                 //sh 'npm run $script $parameter |sed  "s/\"//g"'
                 sh "npm run ${script}  --parameter=$parameter"
+                sh "npm run mergeCM"
                 sh "npm run merge"
                 sh "npm run marge"
                 //sh """npm run $script $parameter |sed  's/\"//g' | sed 's/\\(.*\\) /\\1/' """
