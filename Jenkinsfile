@@ -21,7 +21,7 @@ pipeline {
             steps {
                 // |sed 's/\"//g'
                 //sh 'npm run $script $parameter |sed  "s/\"//g"'
-                sh "npm run ${script}  --parameter=$parameter --reporter mochawesome"
+                sh "npm run ${script}  --parameter=$parameter"
                 //sh """npm run $script $parameter |sed  's/\"//g' | sed 's/\\(.*\\) /\\1/' """
             }
         }
