@@ -6,7 +6,9 @@ pipeline {
             steps {
                //sh 'npm install cypress'
                sh 'npm install cypress --save-dev'
-                sh 'dir'
+               sh 'dir'
+               sh 'npm install --save-dev mochawesome'
+               sh 'npm install --save-dev mochawesome-merge'
             }
         }
         stage('Test') {
@@ -19,7 +21,7 @@ pipeline {
             steps {
                 // |sed 's/\"//g'
                 //sh 'npm run $script $parameter |sed  "s/\"//g"'
-                sh "npm run ${script}  --parameter=$parameter"
+                sh "npm run ${script}  --parameter=$parameter --reporter mochawesome"
                 //sh """npm run $script $parameter |sed  's/\"//g' | sed 's/\\(.*\\) /\\1/' """
             }
         }
