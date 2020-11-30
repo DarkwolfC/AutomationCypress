@@ -5,6 +5,7 @@ pipeline {
         stage('Install Cypress') {
             steps {
                //sh 'npm install cypress'
+               sh "npm run clean"
                sh 'npm install cypress --save-dev'
                sh 'dir'
                sh 'npm install --save-dev mochawesome'
